@@ -1,0 +1,1 @@
+- TODO: cache urls and associated colors to DB (with delay)
