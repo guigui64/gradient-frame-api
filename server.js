@@ -7,12 +7,13 @@ const image = require('./controllers/image');
 
 const app = express();
 
-app.use(morgan('tiny'));
+app.use(morgan('combined'));
 app.use(cors());
 app.use(bodyParser.json());
 
 app.post('/imageurl', (req, res) => image.handleImageUrl(req, res));
 
-app.listen(3000, () => {
-  console.log('app is running on port 3000');
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`app is running on port ${port}`);
 })
