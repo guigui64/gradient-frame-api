@@ -1,2 +1,3 @@
 - TODO: cache urls and associated colors to DB (with delay)
 - TODO: add tests + CI on github
+- TODO: typescript
